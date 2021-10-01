@@ -1,0 +1,24 @@
+function z = mutualInf_dis(x, y)
+% Compute entropy H(x) of a discrete variable x.
+% Written by MH Shammakhi (mh.shammakhi@aut.ac.ir).
+    assert(numel(x) == numel(y));
+    tic;
+    temp=crosstab(x,y);
+    toc;
+tic;
+    zp(1,1)=numel(find(y(find(x==-1))==0));zp(1,2)=numel(find(y(find(x==-1))==1));
+    zp(2,1)=numel(find(y(find(x== 0))==0));zp(2,2)=numel(find(y(find(x== 0))==1));
+    zp(3,1)=numel(find(y(find(x== 1))==0));zp(3,2)=numel(find(y(find(x== 1))==1));
+    toc;
+    tic;
+    zp2(1,1)=sum((x==-1)&(y==0));zp2(1,2)=sum((x==-1)&(y==1));
+    zp2(2,1)=sum((x== 0)&(y==0));zp2(2,2)=sum((x== 0)&(y==1));
+    zp2(3,1)=sum((x== 1)&(y==0));zp2(3,2)=sum((x== 1)&(y==1));
+    toc;
+    tic;
+    temp=temp/sum(sum(temp));
+    py=repmat(sum(temp,1),numel(unique(x)),1);px=repmat(sum(temp,2),1,numel(unique(y)));
+    pxy=temp; 
+    z=sum(sum(pxy.*log2(pxy./(px.*py))));
+    toc;
+end
