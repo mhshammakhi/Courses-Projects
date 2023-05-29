@@ -9,7 +9,7 @@ It needs to spend a lot of time to do that. I will continue it depends on the nu
 
 some of these projects that were uploaded are:
 
-**Advanced Communication:** I uploaded projects which I have done for "Advanced Communication" Course. 
+  - **Advanced Communication:** I uploaded projects which I have done for "Advanced Communication" Course. 
 
-**Statistical Learining:** I uploaded assignments and projects which I have done for "Statistical Learning" Course. It contains three subprojects, One paper presentation and The final project files.
+  - **Statistical Learining:** I uploaded assignments and projects which I have done for "Statistical Learning" Course. It contains three subprojects, One paper presentation and The final project files.
 
