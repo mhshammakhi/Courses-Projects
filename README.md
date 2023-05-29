@@ -1,13 +1,12 @@
 # MSC Projects and Codes
 
-In my Master (2014-2016), I have done numerous projects in Machine Learning, Statistical Learning, Image Processing and Computer Vision, Deep Learning Signal Processing, and Digital Communication.
+During my Master's program (2014-2016), I undertook numerous projects encompassing areas such as Machine Learning, Statistical Learning, Image Processing, Computer Vision, Deep Learning, Signal Processing, and Digital Communication.
 
-In those days there were not these Python modules and MATLAB libraries as well. I have implemented a lot of those algorithms by myself and I developed some of the libraries. Most of them were implemented in MATLAB and Python.
+At that time, the Python modules and MATLAB libraries that exist today were not readily available. Consequently, I personally implemented many of these algorithms and even developed certain libraries myself. The majority of these implementations were carried out using MATLAB and Python.
 
-I want to share a few of them and I will upload somehow the others. 
-It needs to spend a lot of time to do that. I will continue it depends on the number of views.
+I am keen to share a few of these projects, and I plan to upload them in some way. However, due to the significant time investment required, I will prioritize based on the number of views and continue accordingly.
 
-some of these projects that were uploaded are:
+Here are some of the projects that have already been uploaded:
 
   - **Advanced Communication:** I uploaded projects which I have done for "Advanced Communication" Course. 
 
