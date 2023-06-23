@@ -1,0 +1,17 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+mlcd                                                              0x0160      16
+_base_y                                                           0x0170       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+inmas                                                             R5           1
+_lcd_x                                                            R4           1
+_lcd_y                                                            R7           1
+_lcd_maxx                                                         R6           1

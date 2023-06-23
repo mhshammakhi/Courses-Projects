@@ -1,0 +1,166 @@
+;/*****************************************************
+;This program was produced by the
+;CodeWizardAVR V2.05.3 Standard
+;Automatic Program Generator
+;© Copyright 1998-2011 Pavel Haiduc, HP InfoTech s.r.l.
+;http://www.hpinfotech.com
+;
+;Project : trasmiter mh
+;Version :
+;Date    : 5/22/2013
+;Author  : mh
+;Company :
+;Comments:
+;
+;
+;Chip type               : ATmega16
+;Program type            : Application
+;AVR Core Clock frequency: 4.000000 MHz
+;Memory model            : Small
+;External RAM size       : 0
+;Data Stack size         : 256
+;*****************************************************/
+;
+;
+;#include <delay.h>
+;#include <mega16.h>
+;PCODE: $00000000 VOL: 0
+	#ifndef __SLEEP_DEFINED__
+;PCODE: $00000001 VOL: 0
+	#define __SLEEP_DEFINED__
+;PCODE: $00000002 VOL: 0
+	.EQU __se_bit=0x40
+;PCODE: $00000003 VOL: 0
+	.EQU __sm_mask=0xB0
+;PCODE: $00000004 VOL: 0
+	.EQU __sm_powerdown=0x20
+;PCODE: $00000005 VOL: 0
+	.EQU __sm_powersave=0x30
+;PCODE: $00000006 VOL: 0
+	.EQU __sm_standby=0xA0
+;PCODE: $00000007 VOL: 0
+	.EQU __sm_ext_standby=0xB0
+;PCODE: $00000008 VOL: 0
+	.EQU __sm_adc_noise_red=0x10
+;PCODE: $00000009 VOL: 0
+	.SET power_ctrl_reg=mcucr
+;PCODE: $0000000A VOL: 0
+	#endif
+;PCODE: $0000000B VOL: 0
+;PCODE: $0000000C VOL: 0
+;
+;// Standard Input/Output functions
+;#include <stdio.h>
+;
+;// Declare your global variables here
+;unsigned char a;
+;
+;
+;void main(void)
+; 0000 0024 {
+
+	.CSEG
+;PCODE: $0000000D VOL: 0
+; 0000 0025 // Declare your local variables here
+; 0000 0026 
+; 0000 0027 // Input/Output Ports initialization
+; 0000 0028 // Port A initialization
+; 0000 0029 // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In
+; 0000 002A // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T
+; 0000 002B PORTA=0x00;
+;PCODE: $0000000E VOL: 0
+;PCODE: $0000000F VOL: 0
+; 0000 002C DDRA=0x00;
+;PCODE: $00000010 VOL: 0
+;PCODE: $00000011 VOL: 0
+; 0000 002D 
+; 0000 002E // Port B initialization
+; 0000 002F // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In
+; 0000 0030 // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T
+; 0000 0031 PORTB=0xFF;
+;PCODE: $00000012 VOL: 0
+;PCODE: $00000013 VOL: 0
+; 0000 0032 DDRB=0x00;
+;PCODE: $00000014 VOL: 0
+;PCODE: $00000015 VOL: 0
+; 0000 0033 
+; 0000 0034 // Port C initialization
+; 0000 0035 // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In
+; 0000 0036 // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T
+; 0000 0037 PORTC=0x00;
+;PCODE: $00000016 VOL: 0
+;PCODE: $00000017 VOL: 0
+; 0000 0038 DDRC=0x00;
+;PCODE: $00000018 VOL: 0
+;PCODE: $00000019 VOL: 0
+; 0000 0039 
+; 0000 003A // Port D initialization
+; 0000 003B // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In
+; 0000 003C // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T
+; 0000 003D PORTD=0x00;
+;PCODE: $0000001A VOL: 0
+;PCODE: $0000001B VOL: 0
+; 0000 003E DDRD=0x00;
+;PCODE: $0000001C VOL: 0
+;PCODE: $0000001D VOL: 0
+; 0000 003F 
+; 0000 0040 
+; 0000 0041 // External Interrupt(s) initialization
+; 0000 0042 // INT0: Off
+; 0000 0043 // INT1: Off
+; 0000 0044 // INT2: Off
+; 0000 0045 MCUCR=0x00;
+;PCODE: $0000001E VOL: 0
+;PCODE: $0000001F VOL: 0
+; 0000 0046 MCUCSR=0x00;
+;PCODE: $00000020 VOL: 0
+;PCODE: $00000021 VOL: 0
+; 0000 0047 
+; 0000 0048 // Timer(s)/Counter(s) Interrupt(s) initialization
+; 0000 0049 TIMSK=0x00;
+;PCODE: $00000022 VOL: 0
+;PCODE: $00000023 VOL: 0
+; 0000 004A 
+; 0000 004B // USART initialization
+; 0000 004C // Communication Parameters: 8 Data, 1 Stop, No Parity
+; 0000 004D // USART Receiver: Off
+; 0000 004E // USART Transmitter: On
+; 0000 004F // USART Mode: Asynchronous
+; 0000 0050 // USART Baud Rate: 9600
+; 0000 0051 UCSRA=0x00;
+;PCODE: $00000024 VOL: 0
+;PCODE: $00000025 VOL: 0
+; 0000 0052 UCSRB=0x08;
+;PCODE: $00000026 VOL: 0
+;PCODE: $00000027 VOL: 0
+; 0000 0053 UCSRC=0x86;
+;PCODE: $00000028 VOL: 0
+;PCODE: $00000029 VOL: 0
+; 0000 0054 UBRRH=0x00;
+;PCODE: $0000002A VOL: 0
+;PCODE: $0000002B VOL: 0
+; 0000 0055 UBRRL=0x33;
+;PCODE: $0000002C VOL: 0
+;PCODE: $0000002D VOL: 0
+; 0000 0056 
+; 0000 0057 
+; 0000 0058 while (1)
+;PCODE: $0000002E VOL: 0
+; 0000 0059       {
+; 0000 005A a=PINB;
+;PCODE: $0000002F VOL: 0
+;PCODE: $00000030 VOL: 0
+; 0000 005B UDR = a;
+;PCODE: $00000031 VOL: 0
+;PCODE: $00000032 VOL: 0
+; 0000 005C delay_ms(1);
+;PCODE: $00000033 VOL: 0
+;PCODE: $00000034 VOL: 0
+;PCODE: $00000035 VOL: 0
+; 0000 005D       }
+;PCODE: $00000036 VOL: 0
+;PCODE: $00000037 VOL: 0
+; 0000 005E }
+;PCODE: $00000038 VOL: 0
+;PCODE: $00000039 VOL: 0
+;PCODE: $0000003A VOL: 0

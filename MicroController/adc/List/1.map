@@ -1,0 +1,18 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+a                                                                 0x0160       2
+phase                                                             0x0162       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+x                                                                 R4,R5        2
+y                                                                 R6,R7        2
+den                                                               R8,R9        2
+num                                                               R10,R11      2
+f                                                                 R13          1

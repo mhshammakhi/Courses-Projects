@@ -1,0 +1,16 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+adc_data                                                          0x0160       2
+input_index                                                       0x0162       1
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+a                                                                 R5           1
+x                                                                 R4           1
+y                                                                 R7           1

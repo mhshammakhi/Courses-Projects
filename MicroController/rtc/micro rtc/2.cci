@@ -1,0 +1,10 @@
+VERSION:3 SOURCE_TIMESTAMP:42B169B2
+NODE:I LEVEL:0 LINE:6 "D:\cvavr2\inc\mega16.h"
+NODE:I LEVEL:0 LINE:7 "D:\cvavr2\inc\lcd.h"
+NODE:I LEVEL:0 LINE:8 "D:\cvavr2\inc\stdio.h"
+NODE:V LEVEL:0 LINE:12 "second -> R5"
+NODE:V LEVEL:0 LINE:12 "minute -> R4"
+NODE:V LEVEL:0 LINE:12 "hour -> R7"
+NODE:V LEVEL:0 LINE:13 "lcd_buff -> RAM:????"
+NODE:F LEVEL:0 LINE:14 "timer2_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:36 "main(void)"

@@ -1,0 +1,24 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+str                                                               0x0160      16
+ph                                                                0x0170       4
+ef                                                                0x0174       4
+adc_data                                                          0x0178       1
+input_index                                                       0x0179       1
+_base_y                                                           0x017A       4
+_seed                                                             0x017E       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+maxp                                                              R5           1
+a                                                                 R4           1
+efi                                                               R6,R7        2
+_lcd_x                                                            R9           1
+_lcd_y                                                            R8           1
+_lcd_maxx                                                         R11          1

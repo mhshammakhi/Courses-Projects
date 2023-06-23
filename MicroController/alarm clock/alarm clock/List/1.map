@@ -1,0 +1,30 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+zaman                                                             0x0160      16
+taghvim                                                           0x0170      16
+year                                                              0x0180       1
+month                                                             0x0181       1
+day                                                               0x0182       1
+week                                                              0x0183       1
+_seed                                                             0x0184       4
+_base_y                                                           0x0188       4
+_lcd_x                                                            0x018C       1
+_lcd_y                                                            0x018D       1
+_lcd_maxx                                                         0x018E       1
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+x                                                                 R4,R5        2
+a                                                                 R6,R7        2
+hour                                                              R9           1
+minute                                                            R8           1
+alarmhour                                                         R11          1
+alarmon                                                           R10          1
+alarmminute                                                       R13          1
+second                                                            R12          1

@@ -1,0 +1,24 @@
+
+****************************************************
+*******************AVSS 2007************************
+***********Targets' initial position****************
+****************************************************
+
+Sequence: motinas_toni_change_ill.avi
+
+
+-The values in the table are parameters of the ellipses bounding the target areas in the first frame of the sequence.
+
+-Each row describes the centroid coordinates, the length of the semi-axes, and the rotation angle "Theta" of the ellipse.
+
+-The origin of the axes is on the top left corner of the image.
+
+-Theta is measured in degrees.
+
+ ---------------------------------------------------------------
+| Tgt.ID | X coord.| Y coord.| Half Width | Half Height | Theta |  
+|--------|---------|---------|------------|-------------|-------|
+|  Toni  |   272   |   196   |     44     |      62     |   0   |
+ ---------------------------------------------------------------
+ 
+ 

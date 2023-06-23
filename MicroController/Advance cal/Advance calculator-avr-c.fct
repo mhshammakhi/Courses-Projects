@@ -1,0 +1,7 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"Advance calculator-avr-c.c" LINE:217
+input_digit DSTACK_USAGE:62 DSTACK_LEVEL:62 FILE:"inputNum.h" LINE:17
+sprintf DSTACK_USAGE:14 DSTACK_LEVEL:76 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1410
+_print DSTACK_USAGE:94 DSTACK_LEVEL:170 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1162
+_ftoe DSTACK_USAGE:16 DSTACK_LEVEL:186 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1098
+floor DSTACK_USAGE:4 DSTACK_LEVEL:190 FILE:"C:\Program Files\cvavr2\lib\math.lib" LINE:659
+ftrunc DSTACK_USAGE:4 DSTACK_LEVEL:194 FILE:"C:\Program Files\cvavr2\lib\math.lib" LINE:544

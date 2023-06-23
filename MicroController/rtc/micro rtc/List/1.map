@@ -1,0 +1,30 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+t                                                                 0x0160      14
+l                                                                 0x016E      14
+zmo                                                               0x017C      14
+alarm                                                             0x018A       2
+k                                                                 0x018C       2
+_seed                                                             0x018E       4
+_base_y                                                           0x0192       4
+_lcd_y                                                            0x0196       1
+_lcd_maxx                                                         0x0197       1
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+zm                                                                R5           1
+zh                                                                R4           1
+h                                                                 R7           1
+m                                                                 R6           1
+s                                                                 R9           1
+y                                                                 R8           1
+w                                                                 R11          1
+mo                                                                R10          1
+d                                                                 R13          1
+_lcd_x                                                            R12          1

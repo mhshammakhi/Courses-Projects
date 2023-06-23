@@ -1,0 +1,11 @@
+VERSION:3 SOURCE_TIMESTAMP:42CDADF1
+NODE:I LEVEL:0 LINE:24 "D:\cvavr2\inc\mega16.h"
+NODE:I LEVEL:0 LINE:26 "D:\cvavr2\inc\delay.h"
+NODE:V LEVEL:0 LINE:27 "a -> R5"
+NODE:V LEVEL:0 LINE:27 "b -> R4"
+NODE:V LEVEL:0 LINE:27 "m -> R7"
+NODE:V LEVEL:0 LINE:27 "x -> R6"
+NODE:M LEVEL:0 LINE:28 "ADC_VREF_TYPE"
+NODE:F LEVEL:0 LINE:31 "timer0_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:44 "read_adc(unsigned char adc_input)"
+NODE:F LEVEL:0 LINE:58 "main(void)"

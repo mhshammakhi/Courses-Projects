@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}مقدمه}{2}
+\contentsline {section}{\numberline {2} ردیابی به روش جابه‌جایی و انطباق ویژگی}{2}
+\contentsline {subsection}{\numberline {2‏.‏1} ردیابی به روش جابه‌جایی میانگین}{4}
+\contentsline {subsection}{\numberline {2‏.‏2} محاسبه ابعاد جسم}{7}
+\contentsline {subsection}{\numberline {2‏.‏3} به‌روزرسانی مدل جسم}{10}
+\contentsline {subsection}{\numberline {2‏.‏4} آزمایشات عملی}{10}
+\contentsline {section}{\numberline {3} پیشنهادات بهبود عملکرد روش ارائه‌شده}{13}
+\contentsline {subsection}{\numberline {3‏.‏1} پیش‌بینی مکان جسم در فریم‌های بعدی با استفاده از فیلتر کالمن}{15}
+\contentsline {subsection}{\numberline {3‏.‏2} استفاده از الگوهای بافت تصویر به جای هیستوگرام رنگ}{15}
