@@ -1,0 +1,55 @@
+#3
+rm(list=ls())
+library(ISLR)
+attach(Khan)
+Data=data.frame(ytrain,xtrain)
+############PCA
+library(pls)
+pca.fit=pcr(ytrain~.,data=Data,,scale=TRUE ,validation ="CV")
+nData=data.frame(y=ytrain,xtrain %*% (pca.fit$projection))
+name=names(nData)
+ntest=xtest %*% (pca.fit$projection)
+nData.test=data.frame(y=ytest,ntest)
+colnames(nData.test)=name
+#####################one vs all
+y1=ifelse(nData$y==1,1,0);dat1=data.frame(y=y1,nData[,-1])
+y1=ifelse(nData$y==2,1,0);dat2=data.frame(y=y1,nData[,-1])
+y1=ifelse(nData$y==3,1,0);dat3=data.frame(y=y1,nData[,-1])
+y1=ifelse(nData$y==4,1,0);dat4=data.frame(y=y1,nData[,-1])
+rm(y1)
+#####################SVM
+library(e1071)
+t1=proc.time()
+svm1=svm(y~.,data=dat1,family=binomial)
+svm2=svm(y~.,data=dat2,family=binomial)
+svm3=svm(y~.,data=dat3,family=binomial)
+svm4=svm(y~.,data=dat4,family=binomial)
+svm.pred1=predict(svm1,nData.test,type="response")
+svm.pred2=predict(svm2,nData.test,type="response")
+svm.pred3=predict(svm3,nData.test,type="response")
+svm.pred4=predict(svm4,nData.test,type="response")
+proc.time()-t1
+svm.mat=data.frame(svm.pred1,svm.pred2,svm.pred3,svm.pred4)
+svm.class=max.col(svm.mat)
+e_svm=mean(svm.class!=ytest)
+table(svm.class,ytest)
+e_svm
+svm.out=data.frame(svm.class,apply(svm.mat, 1,max)/max(apply(svm.mat, 1,max)))
+#####################RVM
+library("kernlab")
+t1=proc.time()
+rvm1=rvm(y~.,data=dat1,family=binomial)
+rvm2=rvm(y~.,data=dat2,family=binomial)
+rvm3=rvm(y~.,data=dat3,family=binomial)
+rvm4=rvm(y~.,data=dat4,family=binomial)
+rvm.pred1=predict(rvm1,nData.test,type="response")
+rvm.pred2=predict(rvm2,nData.test,type="response")
+rvm.pred3=predict(rvm3,nData.test,type="response")
+rvm.pred4=predict(rvm4,nData.test,type="response")
+proc.time()-t1
+rvm.mat=data.frame(rvm.pred1,rvm.pred2,rvm.pred3,rvm.pred4)
+rvm.class=max.col(rvm.mat)
+e_rvm=mean(rvm.class!=ytest)
+table(rvm.class,ytest)
+e_rvm
+rvm.out=data.frame(rvm.class,apply(rvm.mat, 1,max)/max(apply(rvm.mat, 1,max)))

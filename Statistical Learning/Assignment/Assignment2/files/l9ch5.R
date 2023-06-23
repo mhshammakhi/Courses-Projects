@@ -1,0 +1,51 @@
+rm(list=ls())
+st_er=function(data,index)
+{
+  len=length(index)
+  miu=mean(data[index])
+  a=mean((data[index]-miu)^2)
+  se=(a/len)^0.5
+}
+library(MASS)
+library(boot)
+attach(Boston)
+#a
+miu=mean(medv)
+miu
+#b
+se=st_er(medv,1:length(medv))
+se
+Rss=sum((medv-miu)^2)
+#c
+alpha.fn=function(data,index){
+  X=data$medv[index]
+   }
+alpha.fn(Boston,length(medv))
+set.seed(1)
+alpha.fn(Boston,sample(length(medv),length(medv),replace=T))
+boot(medv,st_er,R=1000)
+#d
+se_medv=st_er(medv,1:length(medv))
+miu=mean(medv)
+con_int_medv=c(miu-2*se_medv,miu+2*se_medv)
+s1=(min(con_int_medv)<medv)&(max(con_int_medv)>medv)
+nData=Boston[s1,]
+#e
+mu=median(medv)
+#f
+len=length(medv)
+aprim={}
+set.seed(1)
+for (i in 1:100)
+{
+ind=sample(len,len,replace=T)
+train=Boston[ind,]
+nmedv=train$medv
+miu=median(nmedv)
+a=mean((nmedv-miu)^2)
+se=(a/len)^0.5
+aprim[i]=se
+}
+ahat=mean(se)
+set=sqrt(sum((aprim-ahat)^2)/(length(aprim)-1))
+set
